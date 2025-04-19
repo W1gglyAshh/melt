@@ -1,0 +1,41 @@
++------------------+
+| MELT 425 EDITION |
++------------------+
+
+    To Michelle, my BEST FRIEND.
+
+    MELT (short for 'MELT LOVES TERMINAL') is a cross-platform, minimal 
+    text editor written in C++ with the ncurses (compatible with pdcurses)
+    library.
+
+    This is a special edition of the editor. It will receive bug fixes,
+    critical performance patches, and specific features requested by
+    Michelle, but it will NOT receive ANY OTHER updates.
+
+    The behavior of this editor is NOT customizable. If you're looking
+    for a configurable version, please refer to the "melt" repository.
+
+INTRODUCTION
+- MELT is a VERY, VERY lightweight terminal-based text editor, it uses the curses
+  library for cross-platform compatibility, and it is kept in one single source file
+  (inspired by kilo) for easier maintenance and compilation.
+
+- The initial purpose of creating this program was just for fun. It was originally
+  an alternative to kilo that was completely rewritten using the STL Library, and uses
+  vim-style modal editing instead of Ctrl key. Later I decided to make it curses-based,
+  as mentioned above, for non-unix systems  support (pdcurses).
+
+- This special edition of the program is a gift for my best friend Michelle.
+  Celebrating her 14th birthday. We've been through a lot, and this represents
+  the solidness of our friendship.
+
+BUILD INSTRUCTIONS
+- With the Makefile, you can easily build the program by typing "make". But you might need
+  to tweak the Makefile a bit (it uses clang++ as default compiler, and ncurses instead of
+  pdcurses, also you need to completely rewrite the install target yourself if you are on a
+  non-unix system).
+
+- Note that this program require compilers that support C++ 17 and above for std::optional. But feel
+  free to fork and modify it if you need backward compatibility!
+
+Copyright (C) 2025 Gabriel LU. Released under GPLv3. See LICENSE for details.
